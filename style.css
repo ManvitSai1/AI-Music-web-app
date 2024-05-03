@@ -1,0 +1,30 @@
+.heading
+{
+    font-size: 23px;
+    width: 100%;
+    margin: 0;
+}
+
+.note 
+{
+    font-size: 10px;
+    color: black;
+}
+body
+{
+    background-size: 100%;
+}
+.div_songname
+{
+    float: none;
+}
+.div_songname_img
+{
+    width: 200px;
+    border-radius: 100px;
+}
+#songname
+{
+    font-size: 23px;
+    margin: 15px;
+}
