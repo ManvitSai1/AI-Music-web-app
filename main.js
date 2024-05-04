@@ -42,15 +42,29 @@ function draw()
     Image(video, 0, 0, 600, 500);
     fill("#FF0000");
     stroke("#ff0000");
+    sound1 = "music.mp3";
     if(scoreLeftWrist>0.2)
         {
     circle(leftWristX,leftWristY,20);
-    InNumberleftWristY =Number(leftWristY);
-    remove_decimals = floor(InNumberleftWristY);
-    volume = remove_decimals/500;
-    document.getElementById("volume").innerHTML = "Volume =" + volume;
-    song.setVolume(volume);
+    sound2.stop();
+    if(sound1=false)
+        {
+            sound1.play();
+            document.getElementById("songname").innerHTML = "Song Name = Harry Potter Theme";
+        }
+
     }    
+    if(scoreRightWrist>0.2)
+        {
+    circle(rightWristX,rightWristY,20);
+    sound1.stop();
+    if(sound2=false)
+        {
+            sound2.play();
+            document.getElementById("songname").innerHTML = "Song Name = Peter Pan Song";
+        }
+
+    } 
 }
 function play()
 {
